@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 import './index.css';
 
 const API_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000/api';
+console.log('Current API URL:', API_URL); // Debugging: Check if Env Var is loaded
 
 function App() {
   const [lists, setLists] = useState([]);
@@ -56,9 +57,11 @@ function App() {
       const newList = await response.json();
       setLists(prev => [...prev, newList]);
       setActiveListId(newList.id);
+      return newList; // Return the new list so it can be used immediately
     } catch (err) {
       console.error(err);
       alert('Error creating list');
+      return null;
     }
   };
 
@@ -118,10 +121,22 @@ function App() {
     }
 
     try {
+      let targetListId = activeListId;
+
+      // If no list is selected (e.g. no lists exist), create one automatically
+      if (!targetListId) {
+        const newList = await createList('My List');
+        if (newList) {
+          targetListId = newList.id;
+        } else {
+          throw new Error('Could not create a default list to add item to.');
+        }
+      }
+
       const response = await fetch(`${API_URL}/items`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ text, listId: activeListId }),
+        body: JSON.stringify({ text, listId: targetListId }),
       });
       if (!response.ok) throw new Error('Failed to add item');
       const newItem = await response.json();
