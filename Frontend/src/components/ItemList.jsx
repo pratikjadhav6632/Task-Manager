@@ -97,12 +97,12 @@ const ListItem = ({ item, index, onToggle, onDelete, onUpdate }) => {
         </button>
         
         <button 
-          onClick={() => setIsEditing(!isEditing)} 
+          onClick={isEditing ? handleUpdate : () => setIsEditing(!isEditing)} 
           className="btn-icon btn-edit"
-          title="Edit"
+          title={isEditing ? "Save" : "Edit"}
           disabled={item.completed}
         >
-          ✎
+          {isEditing ? "💾" : "✎"}
         </button>
         
         <button 
