@@ -46,7 +46,7 @@ So when you click "Add Item":
 ---
 
 ## <a id="architecture"></a>🏗️ Technical Architecture (The Rules)
-For the developers and teachers, here is how we structured the code to keep it clean and organized. We prioritized separation of concerns and clear data flow.
+For the developers and Non-tech users, here is how we structured the code to keep it clean and organized. We prioritized separation of concerns and clear data flow.
 
 ### 1. Frontend (The "Face" of the App)
 The frontend handles what the user sees and interacts with.
