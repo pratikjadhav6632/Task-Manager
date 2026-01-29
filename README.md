@@ -13,12 +13,21 @@
 
 ## <a id="live-demo"></a>🔗 Live Demo
 - **Frontend (Website)**: <a href="https://task-manager-nine-swart-19.vercel.app/">Live Demo</a>
-- **Backend (Server)**: <a href="https://task-manager-wfrc.onrender.com/api">Live Demo</a>
+- **Backend (Server)**: <a href="https://task-manager-wfrc.onrender.com">Live Demo</a>
 
 ---
+## Task 
+Task (One-Page Application): Build a one-page application using Node + React / Next.js / NestJS (any one).
+Requirements:
+1. Enter a list of items one at a time using a text box.
+2. Display the items below the text box on the same page.
+3. The list should have a title.
+4. Items should be displayed as numbered or dotted list.
+5. Add a README.md explaining how he planned and executed the task.
+6. Bonus: Host the application and add the live link in the GitHub README.
 
-## <a id="about"></a>👋 What is this?
-Imagine a digital notebook where you can write down a list of things (like tasks or groceries) and they stay there even if you close the page. That's what this app does! It's a simple, beautiful website that helps you keep track of your items.
+*****************Design, colours, and UI and design are your creativity Application which should be mobile and web responsive.********
+
 
 ## <a id="how-it-works"></a>⚙️ How It Works (The "Restaurant" Analogy)
 To understand how this app is built, think of a **Restaurant**:
@@ -37,7 +46,7 @@ So when you click "Add Item":
 ---
 
 ## <a id="architecture"></a>🏗️ Technical Architecture (The Rules)
-For the developers and teachers, here is how we structured the code to keep it clean and organized. We prioritized separation of concerns and clear data flow.
+For the developers and Non-tech users, here is how we structured the code to keep it clean and organized. We prioritized separation of concerns and clear data flow.
 
 ### 1. Frontend (The "Face" of the App)
 The frontend handles what the user sees and interacts with.
