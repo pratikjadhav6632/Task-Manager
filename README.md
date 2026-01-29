@@ -140,3 +140,66 @@ npm install  # Installs the tools needed
 npm run dev  # Wakes up the waiter
 ```
 *It will give you a link (like http://localhost:5173). Click it to see your app!*
+
+---
+
+## AI Use (**Antigravity**)
+```
+Act as a technical documentation writer.
+
+Folders - Frontend and Server
+
+Create a clear, well-structured README.md for a full-stack web application.
+The audience includes beginners and evaluators.
+
+Use the following sections and order:
+
+1. Title & Links  
+- Project title  
+- Navigation line: Live Demo • About • How It Works • Architecture • Deployment • Setup  
+- Live Demo section with:
+  - Frontend (Website): <link>
+  - Backend (Server): <link>
+
+2. About  
+- Simple, non-technical explanation of what the app does
+- Use an easy analogy (e.g., digital notebook or checklist)
+
+3. How It Works  
+- Explain using a restaurant-style analogy:
+  User → Frontend → Backend → Database
+- Mention React, Node.js, Express, MongoDB naturally
+
+4. Technical Architecture  
+- Explain separation of concerns
+- Frontend:
+  - Vite, React, Vanilla CSS
+  - Show folder structure
+  - Include a small CSS example (glass/frosted UI)
+- Backend:
+  - Express, Mongoose, MongoDB
+  - Explain Models, Controllers, Routes
+  - Include small code snippets
+  - Show folder structure
+
+5. Deployment  
+- Frontend on Vercel
+- Backend on Render
+- Brief explanation of why
+
+6. Local Setup  
+- Prerequisite: Node.js
+- Steps to run backend
+- Steps to run frontend
+- Show commands and expected behavior
+
+Formatting rules:
+- Use markdown headings
+- Use emojis only in section titles
+- Beginner-friendly, clean, professional tone
+
+Output only the README content.
+
+
+```
+This README was created using **Antigravity** with the prompt above. I also used Antigravity for styling assistance.
